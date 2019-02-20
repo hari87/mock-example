@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/some/thing",
+	"bodyPatterns" : [ {
+      "matchesXPath" : {
+         "expression": "//thing/text()",
+         "contains": "World"
+      }
+    } ]
+    },
+    "response": {
+        "status": 200,
+        "body": "World hello!",
+        "headers": {
+            "Content-Type": "text/plain"
+        }
+    }
+}
